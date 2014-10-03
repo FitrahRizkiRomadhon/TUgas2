@@ -1,0 +1,41 @@
+#include <stdio.h>
+
+main() {
+    printf("Tugas2 \n");
+    printf("Nama : Fitrah Rizki Romadhon \n");
+    printf("NIM : 314 3111 002 \n");
+    printf("Manajemen Informatika A \n");
+
+    {
+    float hasil;
+    int s, r, t, jenis, benar;
+    printf("MENU PILIHAN :\n");
+    printf("1. Menghitung Volume Kubus\n");
+    printf("2. Menghitung Luas Lingkaran\n");
+    printf("3. Menghitung Volume Silinder\n");
+
+   printf("Masukkan pilihan Anda :\a");
+    scanf("%d", &jenis);
+    switch(jenis)
+    {
+        case 1:
+            printf("Masukkan panjang sisi kubus :\a"); scanf("%d", &s);
+            printf("\n");
+            printf("Volume Kubus adalah : %d\n\a", s * s * s); break;
+
+        case 2:
+            printf("Masukkan panjang jari-jari lingkaran :\a"); scanf("%d", &r);
+            printf("\n");
+            printf("Luas Lingkaran adalah : %f\n\a", 3.14 * r * r); break;
+
+        case 3:
+            printf("Masukkan panjang jari-jari lingkaran :"); scanf("%d", &r);
+            printf("Masukkan tinggi silinder :"); scanf("%d", &t);
+            printf("\n");
+            printf("Volume Silinder adalah : %f\n\a ", 3.14 * r * r * t); break;
+
+        default:
+            printf("Sorry Broo, Kode salah..!!!!\n");
+            }
+    }
+}
